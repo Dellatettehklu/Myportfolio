@@ -3,42 +3,68 @@ body{
 }
 
 .navbar{
-	background-color:#777;
-}
-.navbar-default .navbar-brand{
+	background-color:#000;
+  height: 80px;
+  border-radius:0px;
+  z-index: 2px;
+ }
+
+.navbar-inverse .navbar-brand{
 	color: #fff;
+  line-height: 60px;
 }
-.navbar-default .navbar-nav>li>a{
+.navbar-inverse .navbar-nav>li>a{
 	color: #fff;
+  line-height: 60px;
 }
-h2{
-	font-family: 'Lora';
-	font-weight: 700px;
-	color: #FF6600;
-	font-size: 12px;
+
+
+.featurette-heading{
+  font-family: 'Lora';
+  font-weight: 700px;
+  color: #FF6600;
+  font-size: 25px;
+  line-height: 5;
+  margin-left: 25px;
+
+
 }
 h3{
 	font-family: 'Lora', serif;
 	color:#fff;
 }
+h4{
+  font-family: 'Lora', serif;
+  color:#000;
+  font-size: 15px;
+}
+
 p{
 	font-family: 'Lora', serif;
 	color: #FF6600;
+
 }
 
- .Picture-divider hr{
-	border-color:#FF6600; 
+.row-featurette img{
+  width: 500px;
+  height: 500px;
+  transition: 1.0s;
+  margin-top: -20px;
+}
+.row-featurette img:hover{
+    -webkit-filter: blur(7px);
+    opacity:(0.1);
 }
 .carousel {
-  height: 500px;
+  height: 600px;
   margin: 0 auto 60px;
-  overflow: hidden;
   width: 100%;
+
  }
 
 .carousel .item {
-  height: 500px;
-
+  height: 600px;
+  margin-top: -10px;
 
 }
 .carousel-inner {
@@ -46,15 +72,15 @@ p{
   width: 120%;
   margin-left: -10%;
   overflow: hidden;
+  margin-top: -120px;
 }
 .carousel-inner> .item > img {
   position: absolute;
   display: block;
-  min-width: 100%;
   height: auto;
   line-height: 1;
-  width: 100%
-
+  width: 100%;
+  margin-top: 100px;
 
 }
 .carousel-control.left, .carousel-control.right{
@@ -62,67 +88,42 @@ p{
 }
 
 
-.Picture img{
-	width: 500px;
-	height: 500px;
-  transition: 1.0s;
-    
-	
-}
-
-.Picture img:hover{
-    -webkit-filter: blur(7px);
-    opacity:(0.1);
-}
-
-
-img{
-   padding: 20px; 
-}
-.Picture-divider {
-  margin: 80px 0; /
-}
-.Picture-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-  margin-left: 30px;
-  font-size: 40px;
-  margin-top: 150px;
-}
-
 
 .lead{
 	margin-left: 30px;
 	font-size: 25px;
 }
  .video{
- 
- 
-  margin-top: -90px;
-  padding: 60px;
+  margin-top: 10px;
+  padding: 20px;
  
  }
+
+
+
  .bg-grey {
       background-color: #f6f6f6;
   }
-.footer{
-	background-color: #000;
 
-}
 
-.footer a{
+footer a{
 	color: #f6f6f6;
 }
 
 footer{
 	height: 150px;
 	margin-bottom: -50px;
+  background-color: #000;
 }
 
 /*small devices(tablets, 768px and below)*/
 @media(max-width: 768px){
-    
+    .carousel .item {
+  height: 100%;
+  width: auto;
+
+
+}
 }
 
 /*Medium devices(desltops, 992px and below)*/
