@@ -1,270 +1,254 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<!--support of foreign character-->
+  <head>
     <meta charset="utf-8">
-    <!-- IE Ccompatibility setting. It ensources IE uses the latest rendering engine-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- get the physical width of the mobile device-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--link the latest midified bootstrap style sheet-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-     <!--latest JQuery framework, necessary for using Bootsrap's JS plugins-->
-     <link rel="stylesheet" type="text/css" href="style.css">
-     <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
 
-   <!--latest JQuery framework, necessary for using Bootsrap's JS plugins-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-    <!--link the latest midified bootstrap JS library-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
-     <script src="index.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <div id="main_nav">
+         <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">work<span class="caret"></span></a>
 
-	<title>MY PORTFOLIO</title>
-</head>
-<body>
-	<nav class="navbar navbar-inverse">
-	<div class="container">
-		<div class="navbar-header">
-		<a class="navbar-brand" href="#">Portfolio</a>
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
+                <ul class="dropdown-menu">
+                     <li><a href="#">Sub Link 1</a></li>
+                    <li><a href="#">Sub Link 1</a></li>
+                     <li><a href="#">Sub Link 1</a></li>
+                    <li><a href="#">Sub Link 1</a></li>
+                </ul><!--dropdown end-->
+            </li>
+                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
 
-	<div class="collapse navbar-collapse" id="collapsemenu">
-		<ul class="nav navbar-nav navbar-right" >
+                <ul class="dropdown-menu">
+                     <li><a href="#">Sub Link 1</a></li>
+                    <li><a href="#">Sub Link 1</a></li>
+                     <li><a href="#">Sub Link 1</a></li>
+                    <li><a href="#">Sub Link 1</a></li>
+                </ul><!--dropdown end-->
+            </li>
+                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<span class="caret"></span></a>
 
-				<li><a href="#">Work</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-		</ul>
-	</div>
-	</div>
-	</nav>
-
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	 <!-- Indicators -->
-  		<ol class="carousel-indicators">
-    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-   			<li data-target="#myCarousel" data-slide-to="1"></li>
-   		 	<li data-target="#myCarousel" data-slide-to="2"></li>
-   		</ol>
-   	<div class="carousel-inner">
-		<div class="item active">
-			<img src="images/art-3.jpg" alt="gray background">
-			<div class="carousel-caption">
-			<h3> Sample Carousel</h3>
-			</div>
-		</div>
-
-		<div class="item">
-			<img src="images/art2.jpg" alt="gray background">
-				<div class="carousel-caption">
-				<h3> Sample Carousel</h3>
-				</div>
-		</div>
-		<div class="item">
-			<img src="images/art2.jpg" alt="gray background">
-			   <div class="carousel-caption">
-				   	<h3> Sample Carousel</h3>
-				</div>
-		</div>
-
-	</div>
-
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-	   	<span class="glyphicon glyphicon-chevron-left"></span>
-	</a>
-
-	 <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	   	<span class="glyphicon glyphicon-chevron-right"></span>
-	</a>
-	</div>
-
-
-
-      <!-- START THE FEATURETTES -->
-
-
-
-      <div class="row-featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">FIRST WORK HEADING.<span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">This is one of my works I did in my MMP100 class, I really had fun doing it and I enjoyed it.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="images/beccafinal.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-
-
-      <div class="row-featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">SECOND WORK HEADING. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">This is one of olafur eliasson sculpture, it gives you that perspective and illusion feel.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="images/corpo.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-
-
-      <div class="row-featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">THIRD WORK HEADING. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Olafur Eliasson The uncertain museum 2004 steel, black-painted wooden floor, wire, motors, four glass/mirror disks, spotlight, black projection foil</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="images/Museum.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-
-
-      <div class="row-featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">OH YEAH , it's that good <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="images/Abstract.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <div class="row">
-      	<!-- 16:9 aspect ratio -->
-      	 <div class="col-md-4 col-lg-6 video">
-			<div class="embed-responsive embed-responsive-16by9">
-  			<iframe width="560" height="315" src="https://www.youtube.com/embed/k8ZcUFUqxjg" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-
-			<!-- 16:9 aspect ratio -->
-      	 <div class="col-md-4 col-lg-6 video">
-			<div class="embed-responsive embed-responsive-16by9">
-  			<iframe width="560" height="315" src="https://www.youtube.com/embed/BO-8WCHLl6U" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-
-		<!-- 16:9 aspect ratio -->
-      	 <div class="col-md-4 col-lg-6 video">
-			<div class="embed-responsive embed-responsive-16by9">
-  			<iframe width="560" height="315" src="https://www.youtube.com/embed/pTQkJVRzsP8" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-
-		<!-- 16:9 aspect ratio -->
-      	 <div class="col-md-4 col-lg-6 video">
-			<div class="embed-responsive embed-responsive-16by9">
-  			<iframe width="560" height="315" src="https://www.youtube.com/embed/JnD9ySRZvWk" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-
-	<div id="contact" class="container-fluid bg-grey">
-  <h4 class="text-center">CONTACT</h4>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact me and I'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Brooklyn, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> della.tettehklu.com</p>	   
+                <ul class="dropdown-menu">
+                     <li><a href="#">Sub Link 1</a></li>
+                    <li><a href="#">Sub Link 1</a></li>
+                     <li><a href="#">Sub Link 1</a></li>
+                    <li><a href="#">Sub Link 1</a></li>
+                </ul><!--dropdown end-->
+            </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/flame.jpg" alt="img 1">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/wallpapers.jpg" alt="img 2">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/paints.jpg" alt="img 3">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+    </div>
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <img src="images/african-futures-festival.jpg" alt="img1" class="img-responsive img-rounded">
+                <h2>FIRST WORK HEADING.<span class="text-muted">It'll blow your mind.</span></h2>
+          <p >This is one of my works I did in my MMP100 class, I really had fun doing it and I enjoyed it.</p>
+            </div>
+            <div class="col-md-6">
+               <img src="images/corpo.jpg" alt="img2" class="img-responsive img-rounded">
+                <h2>SECOND WORK HEADING. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p >This is one of olafur eliasson sculpture, it gives you that perspective and illusion feel.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+               <img src="images/Museum.jpg" alt="img3" class="img-responsive img-rounded">
+                <h2>THIRD WORK HEADING. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p >Olafur Eliasson The uncertain museum 2004 steel, black-painted wooden floor, wire, motors, four glass/mirror disks, spotlight, black projection foil</p>
+            </div>
+            <div class="col-md-6">
+               <img src="images/pencil.jpg" alt="img4" class="img-responsive img-rounded">
+                <h2>OH YEAH , it's that good <span class="text-muted">See for yourself.</span></h2>
+          <p >Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container video">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/k8ZcUFUqxjg" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BO-8WCHLl6U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/pTQkJVRzsP8" frameborder="0" allowfullscreen></iframe>
+             </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/BO-8WCHLl6U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>	
-    </div>
+
+    <div id="contact" class="container">
+          <h4>CONTACT</h4>
+          <div class="row">
+            <div class="col-sm-5">
+              <p>Contact me and I'll get back to you within 24 hours.</p>
+              <p><span class="glyphicon glyphicon-map-marker"></span> Brooklyn, US</p>
+              <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> della.tettehklu.com</p>
+            </div>
+            <div class="col-sm-7 slideanim">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
   </div>
-</div>
 
-<div id="googleMap" style="height:400px;width:100%;"></div>
+<div id="map" class="container">
+        <div id="googleMap" style="height:400px;width:100%;"></div>
 
-<!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(40.650002, -73.949997);
+        <!-- Add Google Maps -->
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        var myCenter = new google.maps.LatLng(40.650002, -73.949997);
 
-function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:12,
-scrollwheel:false,
-draggable:false,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
+        function initialize() {
+        var mapProp = {
+        center:myCenter,
+        zoom:12,
+        scrollwheel:false,
+        draggable:false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var marker = new google.maps.Marker({
-position:myCenter,
-});
+        var marker = new google.maps.Marker({
+        position:myCenter,
+        });
 
-marker.setMap(map);
-}
+        marker.setMap(map);
+        }
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+</div><!-- end of map-->
 
-<footer class="footer">
-<div class="container text-center">
-    <hr />
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="col-md-3">
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Work</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">About</a></li>
-          
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Contact</a></li>
-                   
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Protfolio</a></li>
-          
-        </ul>
-      </div>  
+
+     <div id="footer">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="text-muted">Copyright &copy; Della Tetteh-klu.</p>
+            </div>
+        </div>
     </div>
-  </div>
-  <hr>
-    <div class="row">
-    <div class="col-md-12">
-		<p class="text-muted">Copyright &copy; Della Tetteh-klu.</p>
-     </div>
-     </div>
-     </div>
- </footer> 
-      
 
-
-
-
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
